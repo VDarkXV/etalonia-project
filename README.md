@@ -202,7 +202,7 @@ ETALONIA — закрытое проприетарное ПО.
 4. Обход механизмов защиты
 
 Использование регулируется EULA.  
-Подробности — в [`LICENSE`](LICENSE) или [EULA 1.1](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md).
+Подробности — в [EULA 1.1](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md).
 
 ---
 
