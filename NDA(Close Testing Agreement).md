@@ -62,7 +62,7 @@ All feedback, suggestions, bug reports, and related materials provided by Tester
 ========================================================================
 ## 7. TERM
 
-This Agreement remains in effect during testing and for **one (1) year after access is revoked**.
+This Agreement remains in effect during testing and for **one (3) year after access is revoked**.
 
 ========================================================================
 ## 8. TERMINATION
