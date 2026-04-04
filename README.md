@@ -4,116 +4,115 @@
 ![License](https://img.shields.io/badge/license-Proprietary-black)
 ![Platform](https://img.shields.io/badge/platform-Windows_10_|_11_(64--bit)-black)
 
-> Enhanced Tools Animation Layers Overlay Navigation Interface App
+> **Enhanced Tools Animation Layers Overlay Navigation Interface App**
 
-**ETALONIA** — изолированная real-time среда композиции сцен для стриминга и live-production.  
-Это не замена OBS. Это контрольный слой поверх него.
+🌐 **Languages:** [English](README.md) | [Русский](README(RU).md)
 
-Вы проектируете визуальную логику эфира отдельно от кодирования и трансляции.  
-Без вмешательства интерфейса. Без риска испортить картинку.
+**ETALONIA** is an isolated real-time scene composition environment for streaming and live production.  
+It is not a replacement for OBS. It is a control layer that sits on top of it.
 
-Рекомендуемая интеграция: OBS Studio.
+Design your broadcast's visual logic separately from encoding and transmission.  
+No interface interference. No risk of ruining the final picture.
 
----
-
-# 🎯 Позиционирование
-
-ETALONIA — это:
-
-- 🎥 Broadcast Composition Engine  
-- 🧠 Control Layer для live-production  
-- 🛠 Изолированная рабочая среда стримера  
-
-OBS отвечает за:
-- кодирование
-- трансляцию
-- запись
-
-ETALONIA отвечает за:
-- структуру сцен
-- управление слоями
-- безопасное редактирование в реальном времени
-- архитектурную изоляцию визуального сигнала
+Recommended integration: **OBS Studio**.
 
 ---
 
-# ❓ Почему не только OBS?
+# 🎯 Positioning
 
-OBS — инструмент кодирования и вещания.
+ETALONIA is:
 
-ETALONIA:
-- структурирует сценовую архитектуру
-- изолирует рабочее пространство
-- позволяет безопасно редактировать во время эфира
-- снижает риск визуальных артефактов
+- 🎥 **Broadcast Composition Engine** - 🧠 **Control Layer** for live production  
+- 🛠 **Isolated Workspace** for the streamer  
 
-Это не конкурент OBS.  
-Это надстройка.
+**OBS handles:**
+- encoding
+- streaming
+- recording
+
+**ETALONIA handles:**
+- scene structure
+- layer management
+- safe real-time editing
+- architectural isolation of the visual signal
+
+---
+
+# ❓ Why not just OBS?
+
+OBS is a tool for encoding and broadcasting.
+
+**ETALONIA:**
+- structures scene architecture
+- isolates the workspace
+- allows safe editing during live broadcasts
+- reduces the risk of visual artifacts
+
+It is not a competitor to OBS.  
+It is an advanced add-on.
 
 ---
 
 # 🖥 Dual-Window Architecture
 
 ### 🛠 Editor
-Рабочая среда сборки сцен.
+The workspace for building scenes.
 
 ### 🎥 Output
-Чистое окно для захвата в OBS.
+A clean window for capture in OBS.
 
-**Editor и Output рендерятся независимо.**
+**Editor and Output are rendered independently.**
 
-Редактирование не влияет на финальный сигнал.  
-Интерфейс никогда не попадает в эфир.  
-Изменения применяются on-the-fly.
+Editing does not affect the final signal. The interface never appears on stream. Changes are applied on-the-fly.
 
 ---
 
-# 🔄 Типовой Workflow
+# 🔄 Typical Workflow
 
-1. Создание сцен: `Start`, `Gameplay`, `Break`, `Chat`.
-2. Настройка слоёв, карточек, источников.
-3. Захват окна Output в OBS.
-4. Переключение сцен по хоткеям.
-5. Изменения в Editor без риска для трансляции.
+1. Create scenes: `Start`, `Gameplay`, `Break`, `Chat`.
+2. Configure layers, cards, and sources.
+3. Capture the **Output** window in OBS.
+4. Switch scenes via hotkeys.
+5. Make changes in the **Editor** without risking the broadcast.
 
 ---
 
-# 🎬 Возможности
+# 🎬 Features
 
-## Управление сценами
-- создание и переключение
-- горячие клавиши
-- переходы
-- блокировка сцен (защита от случайных правок перед эфиром)
-- шаблоны под разные форматы эфира
+## Scene Management
+- creation and switching
+- hotkeys
+- transitions
+- scene locking (protection against accidental edits before airtime)
+- templates for various broadcast formats
 
-## Система слоёв
-- текст
-- изображения
-- видео
-- аудио
-- веб-источники
-- карточки
-- группировка
-- порядок рендеринга
-- управление видимостью
+## Layer System
+- text
+- images
+- video
+- audio
+- web sources
+- cards
+- grouping
+- rendering order
+- visibility management
 
-## Фон сцены
-- цвет
-- изображение
-- видео
-- эффекты
+## Scene Background
+- color
+- image
+- video
+- effects
 
 ## Preset Ecosystem
-- `.escf` — сцена  
-- `.escdf` — карточка  
-- `.escprf` — полный проект  
+- `.escf` — scene  
+- `.escdf` — card  
+- `.escprf` — full project  
 
-Быстрое сохранение и загрузка сложных конфигураций.
+Quickly save and load complex configurations.
 
 ---
 
-# ⚡ Архитектурные особенности
+# ⚡ Architectural Highlights
 
 - **Dual-Window Rendering Isolation**
 - **Real-Time State Synchronization**
@@ -122,116 +121,115 @@ ETALONIA:
 - **Lightweight Update Mode**
 - **Preset-Based Scene Architecture**
 
-Проектирование сцен отделено от рендеринга финального сигнала.
+Scene design is decoupled from final signal rendering.
 
 ---
 
-# 🧩 Стрим-режим (облегченный Editor)
+# 🧩 Stream Mode (Lightweight Editor)
 
-Режим для длительных и ресурсоёмких эфиров.
+A mode for long and resource-intensive broadcasts.
 
-### Поведение:
-- тяжёлые превью заменяются на тип + ID
-- логика сцены сохраняется
-- Output остаётся полноценным
+### Behavior:
+- heavy previews are replaced by Type + ID
+- scene logic remains intact
+- Output remains full-quality
 
-### Использовать при:
-- большом количестве веб-источников
-- 2+ часовых стримах
-- ограниченных ресурсах
-- параллельном запуске игры и браузера
+### Use when:
+- dealing with a high number of web sources
+- 2+ hour streams
+- limited hardware resources
+- running a game and browser simultaneously
 
-Меню: `Сцена → Стрим-режим (облегченный Editor)`
+Menu: `Scene → Stream Mode (Lightweight Editor)`
 
 ---
 
-# 🖥 Системные требования
+# 🖥 System Requirements
 
-|  Параметр  |  Минимум  | Рекомендуется |
+| Parameter | Minimum | Recommended |
 |-----|-------------------|-----------------|
-| CPU | 4 потока          | 8+ потоков      |
-| RAM | 8 ГБ              | 16 ГБ           |
-| GPU | DX11 / OpenGL 3.3 | Дискретная      |
+| CPU | 4 threads | 8+ threads |
+| RAM | 8 GB | 16 GB |
+| GPU | DX11 / OpenGL 3.3 | Discrete GPU |
 
-**ОС:** Windows 10 / 11 (64-bit)  
-**Сторонние зависимости:** не требуются  
+**OS:** Windows 10 / 11 (64-bit)  
+**Third-party dependencies:** none required  
 
-### Производительность
+### Performance
 
-- 4 потока — ~30 FPS live-update  
-- ≤3 потока — Web Worker отключается
+- 4 threads — ~30 FPS live-update  
+- ≤3 threads — Web Worker is disabled
 
 ---
 
-# 🔐 Локальная диагностика
+# 🔐 Local Diagnostics
 
-Программа ведет автоматический журнал событий для анализа стабильности и оперативного исправления ошибок. 
+The software maintains an automatic event log for stability analysis and rapid bug fixing.
 
-### 📋 Что фиксируется
-* **System Snapshot:** технические характеристики оборудования (CPU/RAM/GPU) при старте сессии.
-* **Lifecycle:** события запуска, перезагрузки и завершения работы приложения.
-* **Error Tracking:** детальный перехват критических ошибок и предупреждений системы.
-* **Interface Events:** ключевые действия пользователя в Editor (без сбора персональных данных).
-* **Performance:** отчеты о нагрузке на систему, потреблении памяти и скорости рендеринга.
+### 📋 What is recorded
+* **System Snapshot:** hardware technical specifications (CPU/RAM/GPU) at session start.
+* **Lifecycle:** application launch, restart, and shutdown events.
+* **Error Tracking:** detailed capture of critical system errors and warnings.
+* **Interface Events:** key user actions in the Editor (no personal data collection).
+* **Performance:** reports on system load, memory consumption, and rendering speed.
 
-### 📁 Хранение и путь
-Все диагностические данные хранятся **исключительно локально** на устройстве пользователя:
+### 📁 Storage and Path
+All diagnostic data is stored **exclusively locally** on the user's device:  
 `Documents/ETALONIA/logs`
 
-### 🛡 Политика конфиденциальности
-* **Zero-Cloud:** данные никогда не отправляются на внешние серверы или сторонним лицам.
-* **Auto-Purge:** файлы логов автоматически удаляются через **7 дней** или по достижении **140 часов** суммарной работы приложения.
-* **No Telemetry:** скрытая передача маркетинговых, статистических или персональных данных отсутствует.
+### 🛡 Privacy Policy
+* **Zero-Cloud:** data is never sent to external servers or third parties.
+* **Auto-Purge:** log files are automatically deleted after **7 days** or upon reaching **140 hours** of total application runtime.
+* **No Telemetry:** hidden transmission of marketing, statistical, or personal data is non-existent.
 
 > [!IMPORTANT]
-> Логи предназначены только для личного анализа пользователем или добровольной передачи разработчику для решения технических проблем.
+> Logs are intended only for personal analysis by the user or voluntary submission to the developer for resolving technical issues.
 
 # ⚠ Alpha Notice
 
-Версия находится на стадии ALPHA.  
-Архитектура и производительность могут изменяться.  
-Перед критически важными трансляциями рекомендуется тестирование.
+This version is currently in the **ALPHA** stage.  
+Architecture and performance are subject to change. Testing is recommended before critical broadcasts.
 
 ---
 
-# 🛡 Лицензия
+# 🛡 License
 
-ETALONIA — закрытое проприетарное ПО.
+ETALONIA is closed proprietary software.
 
-Запрещено:
-1. Распространение кода
-2. Декомпиляция
-3. Реверс-инжиниринг
-4. Обход механизмов защиты
+**Prohibited:**
+1. Code distribution
+2. Decompilation
+3. Reverse engineering
+4. Bypassing protection mechanisms
 
-Использование регулируется EULA.  
-Подробности — в [EULA 1.1](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md).
+Usage is governed by the EULA.  
+Details — in [EULA 1.1](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md).
 
 ---
 
-## ⚖️ Краткая информация о лицензии
+## ⚖️ License Summary
 
-ETALONIA — проприетарное программное обеспечение.  
-Использование программы регулируется полной лицензией (EULA 1.1).
+ETALONIA is proprietary software.  
+Usage is governed by the full license (EULA 1.1).
 
-**Обзор (ознакомительный, не юридически обязывающий):**
-- Запрещено распространять, копировать или модифицировать код.
-- Запрещен реверс-инжиниринг и декомпиляция.
-- Запрещено обходить механизмы защиты.
-- Вся интеллектуальная собственность, брендинг и логика сцены принадлежат Danylo Panysko (V_DarkX_V).
-- Логи создаются локально для диагностики и не отправляются в сеть.
+**Overview (Informational, not legally binding):**
+- Prohibited to distribute, copy, or modify code.
+- Prohibited to reverse engineer or decompile.
+- Prohibited to bypass security mechanisms.
+- All intellectual property, branding, and scene logic belong to Danylo Panysko (V_DarkX_V).
+- Logs are created locally for diagnostics and are not sent over the network.
 
-> ⚠️ Этот краткий обзор служит только для ознакомления. Юридическую силу имеет только полная версия EULA 1.1.
+> ⚠️ This summary is for informational purposes only. Only the full version of EULA 1.1 has legal force.
 
 ---
 
 ### 🧪 Closed Beta Testing
-На данный момент ETALONIA находится в стадии закрытого тестирования. 
-- **Как попасть:** Подать заявку в нашем [Discord Server](https://discord.gg/QhTCffCas6).
-- **Условия:** Все тестеры обязаны соблюдать [NDA / Closed Testing Agreement](https://github.com/VDarkXV/etalonia-project/blob/main/NDA(Close%20Testing%20Agreement).md).
-- **Важно:** Публичная демонстрация разрешена только для окна вывода (Output).
+ETALONIA is currently in closed testing.
+- **How to join:** Apply via our [Discord Server](https://discord.gg/QhTCffCas6).
+- **Terms:** All testers must comply with the [NDA / Closed Testing Agreement](https://github.com/VDarkXV/etalonia-project/blob/main/NDA(Close%20Testing%20Agreement).md).
+- **Important:** Public demonstration is allowed for the **Output** window only.
 
 ---
 
-© 2026 V_DarkX_V — ETALONIA Project  
+© 2026 Danylo Panysko (V_DarkX_V) — ETALONIA Project  
 Contact: etalonia.dev@gmail.com
