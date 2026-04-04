@@ -228,7 +228,7 @@ ETALONIA — проприетарное программное обеспече�
 ### 🧪 Closed Beta Testing
 На данный момент ETALONIA находится в стадии закрытого тестирования. 
 - **Как попасть:** Подать заявку в нашем [Discord Server](https://discord.gg/QhTCffCas6).
-- **Условия:** Все тестеры обязаны соблюдать [NDA / Closed Testing Agreement]([NDA(Close Testing Agreement).md)](https://github.com/VDarkXV/etalonia-project/blob/main/NDA(Close%20Testing%20Agreement).md)
+- **Условия:** Все тестеры обязаны соблюдать [NDA / Closed Testing Agreement](https://github.com/VDarkXV/etalonia-project/blob/main/NDA(Close%20Testing%20Agreement).md)
 - **Важно:** Публичная демонстрация разрешена только для окна вывода (Output).
 
 ---
