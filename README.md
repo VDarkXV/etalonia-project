@@ -1,150 +1,278 @@
-# ⬛ ETALONIA
+# ETALONIA
 
-![Version](https://img.shields.io/badge/version-v0.0.12_pre--beta-black)
-![License](https://img.shields.io/badge/license-Proprietary-black)
+![Version](https://img.shields.io/badge/version-v0.0.12_PRE--BETA-black)
 ![Platform](https://img.shields.io/badge/platform-Windows_10_|_11_(64--bit)-black)
+![License](https://img.shields.io/badge/license-Proprietary-black)
 
-> **Enhanced Tools Animation Layers Overlay Navigation Interface App**
+> **Enhanced Tools Animation Layers Overlay Navigation Interface Application**
 
-🌐 **Languages:** [English](README.md) | [Русский](README(RU).md)
+ **Languages:** [English](README.md) | [Русский](README(RU).md)
 
-**ETALONIA** is an isolated real-time scene composition environment for streaming and live production.  
-It is not a replacement for OBS. It is a control layer that sits on top of it.
+**ETALONIA** is a local real-time visual control layer for live broadcasts and live production.  
+It is designed to work **alongside OBS Studio**, not replace it.
 
-Design your broadcast's visual logic separately from encoding and transmission.  
-No interface interference. No risk of ruining the final picture.
+OBS handles encoding, recording, and streaming.  
+ETALONIA handles scene structure, cards, web sources, transitions, hotkeys, and safe live updates during broadcasts.
 
-Recommended integration: **OBS Studio**.
-
----
-
-# 🎯 Positioning
-
-ETALONIA is:
-
-- 🎥 **Broadcast Composition Engine** - 🧠 **Control Layer** for live production  
-- 🛠 **Isolated Workspace** for the streamer  
-
-**OBS handles:**
-- encoding
-- streaming
-- recording
-
-**ETALONIA handles:**
-- scene structure
-- layer management
-- safe real-time editing
-- architectural isolation of the visual signal
+**Current public status:** `0.0.12 PRE-BETA`  
+**Next target:** stabilization of `0.0.13` before Beta
 
 ---
 
-# ❓ Why not just OBS?
+## What ETALONIA is for
 
-OBS is a tool for encoding and broadcasting.
+ETALONIA is built for broadcasts that need more than a basic scene list.  
+It helps manage visual logic, show states, cards, web sources, and scene structure from one place — without risking the editor appearing on stream.
 
-**ETALONIA:**
-- structures scene architecture
-- isolates the workspace
-- allows safe editing during live broadcasts
-- reduces the risk of visual artifacts
+Especially useful for:
 
-It is not a competitor to OBS.  
-It is an advanced add-on.
-
----
-
-# 🖥 Dual-Window Architecture
-
-### 🛠 Editor
-The workspace for building scenes.
-
-### 🎥 Output
-A clean window for capture in OBS.
-
-**Editor and Output are rendered independently.**
-
-Editing does not affect the final signal. The interface never appears on stream. Changes are applied on-the-fly.
+- talk shows;
+- VTuber and character-driven streams;
+- tournaments and game shows;
+- quiz formats;
+- panel discussions;
+- overlay-heavy productions;
+- long broadcasts with many sources;
+- setups where OBS scenes become difficult to manage comfortably.
 
 ---
 
-# 🔄 Typical Workflow
+## Why not just OBS?
 
-1. Create scenes: `Start`, `Gameplay`, `Break`, `Chat`.
-2. Configure layers, cards, and sources.
-3. Capture the **Output** window in OBS.
-4. Switch scenes via hotkeys.
-5. Make changes in the **Editor** without risking the broadcast.
+OBS is excellent for encoding, recording, and streaming.  
+ETALONIA handles the **production logic around the broadcast**.
 
----
+With ETALONIA you can:
 
-# 🎬 Features
+- build scenes outside OBS;
+- keep a clean Output window for capture;
+- edit live without exposing the interface on stream;
+- reduce OBS scene overload by moving orchestration into a separate layer;
+- manage cards, sources, overlays, and scene states from one workspace.
 
-## Scene Management
-- creation and switching
-- hotkeys
-- transitions
-- scene locking (protection against accidental edits before airtime)
-- templates for various broadcast formats
-
-## Layer System
-- text
-- images
-- video
-- audio
-- web sources
-- cards
-- grouping
-- rendering order
-- visibility management
-
-## Scene Background
-- color
-- image
-- video
-- effects
-
-## Preset Ecosystem
-- `.escf` — scene  
-- `.escdf` — card  
-- `.escprf` — full project  
-
-Quickly save and load complex configurations.
+In short, ETALONIA acts as a control layer between your content and OBS.
 
 ---
 
-# ⚡ Architectural Highlights
+## Typical workflow
 
-- **Dual-Window Rendering Isolation**
-- **Real-Time State Synchronization**
-- **On-the-Fly Editing Engine**
-- **Asset Decoupling Layer**
-- **Lightweight Update Mode**
-- **Preset-Based Scene Architecture**
+1. Launch ETALONIA.
+2. Build scenes, cards, layers, and sources in the **Editor**.
+3. Capture the clean **Output** window in OBS.
+4. Switch scenes using hotkeys.
+5. Make live changes while the stream output stays clean.
 
-Scene design is decoupled from final signal rendering.
-
----
-
-# 🧩 Stream Mode (Lightweight Editor)
-
-A mode for long and resource-intensive broadcasts.
-
-### Behavior:
-- heavy previews are replaced by Type + ID
-- scene logic remains intact
-- Output remains full-quality
-
-### Use when:
-- dealing with a high number of web sources
-- 2+ hour streams
-- limited hardware resources
-- running a game and browser simultaneously
-
-Menu: `Scene → Stream Mode (Lightweight Editor)`
+**Editor** is for preparation and control.  
+**Output** is for the broadcast itself.
 
 ---
 
-# 🖥 System Requirements
+## Dual-window architecture
+
+### Editor
+
+Workspace for building and managing scenes.
+
+### Output
+
+A clean render window intended for OBS capture.
+
+The windows are separated intentionally:
+
+- the Editor never needs to appear on stream;
+- the Output remains visually clean;
+- changes can be applied on the fly;
+- live editing does not disrupt the final output.
+
+---
+
+## Main features
+
+### Scene management
+
+- create and switch scenes;
+- configure transitions;
+- lock scenes to prevent accidental edits before going live;
+- use templates for different broadcast formats;
+- save and load scene files.
+
+### Layers and objects
+
+Supported objects:
+
+- text;
+- images;
+- video;
+- audio;
+- web / iframe sources;
+- cards;
+- grouped objects.
+
+Objects support:
+
+- layer ordering;
+- selection;
+- snapping;
+- transforms;
+- visibility states;
+- optional enter / exit animation behavior.
+
+### Scene backgrounds and effects
+
+Scenes can use:
+
+- solid colors;
+- images;
+- video backgrounds;
+- blur and effect modes.
+
+### Hotkeys
+
+ETALONIA supports configurable hotkeys for fast Editor workflows and Output control.  
+Hotkey profiles can be imported and exported.
+
+---
+
+## Cards: the core show-control system
+
+Cards are one of the main production systems inside ETALONIA.  
+They are especially useful for:
+
+- players;
+- guests;
+- challenge states;
+- topic cards;
+- voting blocks;
+- role cards;
+- live show data;
+- interactive formats of any kind.
+
+Card features include:
+
+- draggable and resizable webcam blocks;
+- multiple rich-text lines;
+- line visibility modes;
+- swap / placeholder mode;
+- per-line positioning and sizing;
+- card background color, image, or video;
+- save and load support;
+- preview generation.
+
+### Card Manager
+
+Card Manager is built for fast live manipulation of many cards at once.
+
+Features include:
+
+- adaptive card grid;
+- active-card or whole-scene mode;
+- smart shuffle across cards;
+- smart shuffle inside a single card;
+- mass find and replace;
+- regex and mask helpers;
+- webcam URL replacement;
+- undo for mass actions;
+- quick hide / swap controls;
+- drag-and-drop swapping between cards;
+- card-set save and load.
+
+### Card sets and arrays
+
+ETALONIA also includes a lightweight show-data layer:
+
+- **Card Set** — save/load groups of cards as `.esccs`;
+- **Card Value Arrays** — reusable value collections for mass replacement;
+- import/export support for text, `.escva`, and JSON-compatible collections;
+- array tokens can be inserted using the `массив "Name"` form;
+- optional no-repeat replacement for filling many cards without duplicate values.
+
+The idea is simple: keep layouts as card sets, keep episode data as arrays, then apply everything before going live.
+
+---
+
+## Web sources
+
+ETALONIA supports generic iframe sources and VDO / OBS Ninja style sources.
+
+For VDO / OBS Ninja URLs, the application attempts to normalize useful viewing parameters where possible, such as clean output, cover, and transparency.
+
+Available controls include:
+
+- aspect ratio management;
+- source resolution presets;
+- custom source backgrounds;
+- mute state;
+- health / reconnect status;
+- manual reload;
+- optional scheduled Output maintenance.
+
+This is especially useful for productions with many browser sources, remote guests, and live web content.
+
+---
+
+## Stream Mode
+
+Stream Mode is a lightweight Editor mode for long or resource-heavy broadcasts.  
+It keeps the Output window at full quality while reducing Editor load where possible.
+
+Useful when:
+
+- using many iframe or browser sources;
+- running long broadcasts;
+- working with limited CPU or RAM headroom;
+- running a game, browser, OBS, and ETALONIA simultaneously;
+- stability matters more than full preview detail.
+
+---
+
+## File formats
+
+ETALONIA uses local files for scenes, cards, projects, and data collections.
+
+- `.escf` — scene file
+- `.escdf` — card file
+- `.escprf` — project / preset file
+- `.esccs` — card set
+- `.escva`, `.txt`, `.json` — card value array collections
+
+User files are stored locally.  
+ETALONIA does not require a cloud account in the current PRE-BETA workflow.
+
+---
+
+## Local diagnostics
+
+ETALONIA stores local diagnostic data to help with stability and troubleshooting.
+
+Recorded data may include:
+
+- application launch, restart, and shutdown events;
+- renderer console events;
+- IPC heartbeat and synchronization summaries;
+- scene synchronization summaries;
+- Output performance data;
+- memory snapshots and guard events;
+- hardware snapshots;
+- key interface events related to Editor behavior.
+
+### Storage
+
+All logs are stored locally on the user’s device:
+
+```
+Documents/ETALONIA/logs
+```
+### Privacy
+- no cloud uploads;
+- no external telemetry;
+- no hidden marketing or personal-data transmission;
+- logs may be automatically deleted after 7 days or after 140 hours of total application runtime.
+
+Logs are intended for personal diagnostics or voluntary submission to the developer during troubleshooting.
+
+---
+
+# System Requirements
 
 | Parameter | Minimum | Recommended |
 |-----|-------------------|-----------------|
@@ -155,81 +283,75 @@ Menu: `Scene → Stream Mode (Lightweight Editor)`
 **OS:** Windows 10 / 11 (64-bit)  
 **Third-party dependencies:** none required  
 
-### Performance
 
-- 4 threads — ~30 FPS live-update  
-- ≤3 threads — Web Worker is disabled
+Large productions with many webcams or browser sources depend heavily on browser behavior, WebRTC stability, network conditions, and GPU memory availability.
+Before important broadcasts, always test scenes on the same hardware and setup you plan to stream with.
 
----
 
-# 🔐 Local Diagnostics
+### PRE-BETA notice
 
-The software maintains an automatic event log for stability analysis and rapid bug fixing.
+ETALONIA 0.0.12 is a PRE-BETA build.
+The architecture is already usable, but some details may still change before Beta.
 
-### 📋 What is recorded
-* **System Snapshot:** hardware technical specifications (CPU/RAM/GPU) at session start.
-* **Lifecycle:** application launch, restart, and shutdown events.
-* **Error Tracking:** detailed capture of critical system errors and warnings.
-* **Interface Events:** key user actions in the Editor (no personal data collection).
-* **Performance:** reports on system load, memory consumption, and rendering speed.
+Main focus areas for 0.0.13:
 
-### 📁 Storage and Path
-All diagnostic data is stored **exclusively locally** on the user's device:  
-`Documents/ETALONIA/logs`
+- iframe lifecycle hardening and long soak testing;
+- polishing card-set and array workflows;
+- performance testing for mass source and card changes;
+- improved first-run templates;
+- smoother show preparation flow.
 
-### 🛡 Privacy Policy
-* **Zero-Cloud:** data is never sent to external servers or third parties.
-* **Auto-Purge:** log files are automatically deleted after **7 days** or upon reaching **140 hours** of total application runtime.
-* **No Telemetry:** hidden transmission of marketing, statistical, or personal data is non-existent.
-
-> [!IMPORTANT]
-> Logs are intended only for personal analysis by the user or voluntary submission to the developer for resolving technical issues.
-
-# ⚠ Alpha Notice
-
-This version is currently in the **ALPHA** stage.  
-Architecture and performance are subject to change. Testing is recommended before critical broadcasts.
+Do not rely on PRE-BETA builds for critical paid productions without rehearsal on the same hardware and scene setup.
 
 ---
 
-# 🛡 License
+# License
 
-ETALONIA is closed proprietary software.
+ETALONIA is proprietary software.
 
-**Prohibited:**
-1. Code distribution
-2. Decompilation
-3. Reverse engineering
-4. Bypassing protection mechanisms
+Usage is governed by the full license agreement.
+See  [EULA 1.1](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md).
 
-Usage is governed by the EULA.  
-Details — in [EULA 1.1](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md).
 
----
+### License summary
 
-## ⚖️ License Summary
+This summary is informational only and does not replace the full [EULA](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md).
 
-ETALONIA is proprietary software.  
-Usage is governed by the full license (EULA 1.1).
+Prohibited:
 
-**Overview (Informational, not legally binding):**
-- Prohibited to distribute, copy, or modify code.
-- Prohibited to reverse engineer or decompile.
-- Prohibited to bypass security mechanisms.
-- All intellectual property, branding, and scene logic belong to Danylo Panysko (V_DarkX_V).
-- Logs are created locally for diagnostics and are not sent over the network.
+- distributing the software or source code;
+- modifying the code or creating unauthorized repacks;
+- decompiling or reverse engineering;
+- bypassing protection or security mechanisms.
 
-> ⚠️ This summary is for informational purposes only. Only the full version of EULA 1.1 has legal force.
+All intellectual property, branding, assets, and scene-system logic belong to [Danylo Panysko (V_DarkX_V)](mailto:etalonia.dev@gmail.com).
+
+Local diagnostic logs are created only for stability analysis and are not transmitted over the network.
+
+Only the full version of [EULA 1.1](https://github.com/VDarkXV/etalonia-project/blob/main/EULA.md) has legal force.
 
 ---
 
-### 🧪 Closed Beta Testing
+# Closed beta testing
+
 ETALONIA is currently in closed testing.
-- **How to join:** Apply via our [Discord Server](https://discord.gg/QhTCffCas6).
-- **Terms:** All testers must comply with the [NDA / Closed Testing Agreement](https://github.com/VDarkXV/etalonia-project/blob/main/NDA(Close%20Testing%20Agreement).md).
-- **Important:** Public demonstration is allowed for the **Output** window only.
+
+
+### How to join
+
+Apply via the official [Discord Server](https://discord.gg/QhTCffCas6).
+
+### Testing terms
+
+All testers must comply with the [NDA / Closed Testing Agreement](https://github.com/VDarkXV/etalonia-project/blob/main/NDA%28Close%20Testing%20Agreement%29.md).
+
+### Important
+
+Public demonstration is allowed for the Output window only.
 
 ---
 
-© 2026 Danylo Panysko (V_DarkX_V) — ETALONIA Project  
-Contact: etalonia.dev@gmail.com
+# © 2026 Danylo Panysko (V_DarkX_V) — ETALONIA Project 
+# Contact: [etalonia.dev@gmail.com](mailto:etalonia.dev@gmail.com)
+
+---
