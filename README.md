@@ -116,6 +116,7 @@ Objects support:
 - transforms;
 - visibility states;
 - optional enter / exit animation behavior.
+- object's effects
 
 ### Scene backgrounds and effects
 
