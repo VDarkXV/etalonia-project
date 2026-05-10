@@ -1,6 +1,6 @@
 # ETALONIA
 
-![Version](https://img.shields.io/badge/version-v0.0.12_PRE--BETA-black)
+![Version](https://img.shields.io/badge/version-v0.0.13_PRE--BETA-black)
 ![Platform](https://img.shields.io/badge/platform-Windows_10_|_11_(64--bit)-black)
 ![License](https://img.shields.io/badge/license-Proprietary-black)
 
