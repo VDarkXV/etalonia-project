@@ -14,9 +14,6 @@ It is designed to work **alongside OBS Studio**, not replace it.
 OBS handles encoding, recording, and streaming.  
 ETALONIA handles scene structure, cards, web sources, transitions, hotkeys, and safe live updates during broadcasts.
 
-**Current public status:** `0.0.12 PRE-BETA`  
-**Next target:** stabilization of `0.0.13` before Beta
-
 ---
 
 ## What ETALONIA is for
@@ -291,16 +288,8 @@ Before important broadcasts, always test scenes on the same hardware and setup y
 
 ### PRE-BETA notice
 
-ETALONIA 0.0.12 is a PRE-BETA build.
+ETALONIA 0.0.13 is a PRE-BETA build.
 The architecture is already usable, but some details may still change before Beta.
-
-Main focus areas for 0.0.13:
-
-- iframe lifecycle hardening and long soak testing;
-- polishing card-set and array workflows;
-- performance testing for mass source and card changes;
-- improved first-run templates;
-- smoother show preparation flow.
 
 Do not rely on PRE-BETA builds for critical paid productions without rehearsal on the same hardware and scene setup.
 
