@@ -22,7 +22,7 @@ Including all branding variations:
 
 **Danylo Panysko**  
 Alias: **V_DarkX_V**  
-Country of residence: **Sweden**
+Country of residence: **Slovakia**
 
 Contact (legal & commercial inquiries only):  
 **etalonia.dev@gmail.com**
@@ -250,7 +250,7 @@ If you believe the Software infringes your copyright, contact:
 
 # 15. Governing Law
 
-This Agreement is governed by the **laws of Sweden**.
+This Agreement is governed by the **laws of Slovakia**.
 
 ---
 
