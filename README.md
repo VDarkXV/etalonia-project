@@ -181,7 +181,7 @@ ETALONIA also includes a lightweight show-data layer:
 - **Card Set** — save/load groups of cards as `.esccs`;
 - **Card Value Arrays** — reusable value collections for mass replacement;
 - import/export support for text, `.escva`, and JSON-compatible collections;
-- array tokens can be inserted using the `массив "Name"` form;
+- array tokens can be inserted using the `array "Name"` form;
 - optional no-repeat replacement for filling many cards without duplicate values.
 
 The idea is simple: keep layouts as card sets, keep episode data as arrays, then apply everything before going live.
