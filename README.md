@@ -6,7 +6,7 @@
 
 > **Enhanced Tools Animation Layers Overlay Navigation Interface Application**
 
- **Languages:** [English](README.md) | [Русский](README(RU).md)
+ **Languages:** [English](README.md) | 
 
 **ETALONIA** is a local real-time visual control layer for live broadcasts and live production.  
 It is designed to work **alongside OBS Studio**, not replace it.
